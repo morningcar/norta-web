@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Norta</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Free HTML Templates" name="keywords" />
+    <meta content="Free HTML Templates" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+      <div class="row gx-0">
+        <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+          <div class="d-inline-flex align-items-center" style="height: 45px">
+            <small class="me-3 text-light"
+              ><i class="fa fa-map-marker-alt me-2"></i>Eldoret</small
+            >
+            <small class="me-3 text-light"
+              ><i class="fa fa-phone-alt me-2"></i>0717154825</small
+            >
+            <small class="text-light"
+              ><i class="fa fa-envelope-open me-2"></i>info@norta.or.ke</small
+            >
+          </div>
+        </div>
+        <div class="col-lg-4 text-center text-lg-end">
+          <div class="d-inline-flex align-items-center" style="height: 45px">
+            <a
+              class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+              href="https://twitter.com/NortAmbassadors?s=20"
+              ><i class="fab fa-twitter fw-normal"></i
+            ></a>
+            <a
+              class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+              href="https://www.facebook.com/85NORTA/"
+              ><i class="fab fa-facebook-f fw-normal"></i
+            ></a>
+            <a
+              class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
+              href=""
+              ><i class="fab fa-linkedin-in fw-normal"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative p-0">
+      <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+        <!---- <a href="index.html" class="navbar-brand p-0">
+          <h1 class="m-0"><i class="fa fa-user-tie me-2"></i>Startup</h1>
+        </a>-->
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="./img/NORTA_LOGO-removebg.png" class="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto py-0">
+            <a href="index.html" class="nav-item nav-link">Home</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+            <a href="activities.html" class="nav-item nav-link">Activities</a>
+            <a href="Gallery.html" class="nav-item nav-link">Gallery</a>
+            <!-- <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Blog</a
+              >
+              <div class="dropdown-menu m-0">
+                <a href="blog.html" class="dropdown-item">Gallery</a>
+              </div>
+            </div>-->
+
+            <a href="contact.html" class="nav-item nav-link">Contact</a>
+          </div>
+        </div>
+      </nav>
+
+      <div
+        class="container-fluid bg-primary py-5 bg-header"
+        style="margin-bottom: 90px"
+      >
+        <div class="row py-5">
+          <div class="col-12 pt-lg-5 mt-lg-5 text-center">
+            <h1 class="display-4 text-white animated zoomIn">Gallery</h1>
+            <a href="" class="h5 text-white">Home</a>
+            <i class="far fa-circle text-white px-2"></i>
+            <a href="" class="h5 text-white">Gallery</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content" style="background: rgba(9, 30, 62, 0.7)">
+          <div class="modal-header border-0">
+            <button
+              type="button"
+              class="btn bg-white btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div
+            class="modal-body d-flex align-items-center justify-content-center"
+          >
+            <div class="input-group" style="max-width: 600px">
+              <input
+                type="text"
+                class="form-control bg-transparent border-primary p-3"
+                placeholder="Type search keyword"
+              />
+              <button class="btn btn-primary px-4">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+    <!-- Blog Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="container py-5">
+        <div class="row g-5">
+          <!-- Blog list Start -->
+          <div class="col-lg-8">
+            <div class="row g-5">
+              <div class="col-md-6 wow slideInUp" data-wow-delay="0.1s">
+                <div class="blog-item bg-light rounded overflow-hidden">
+                  <div class="blog-img position-relative overflow-hidden">
+                    <img class="img-fluid" src="img/about.jpg" alt="" />
+                  </div>
+                  <div class="p-4">
+                    <div class="d-flex mb-3">
+                      <small class="me-3"
+                        ><i class="far fa-user text-primary me-2"></i>Norta
+                      </small>
+                      <small
+                        ><i class="far fa-calendar-alt text-primary me-2"></i>01
+                        Jan, 2022</small
+                      >
+                    </div>
+                    <h4 class="mb-3">Planting trees</h4>
+                    <p>
+                      Trees act as nature’s buffers. They act as natural flood
+                      control, improve neighborhoods, and decrease adverse
+                      effects from man-made environmental changes. Tree’s
+                      natural production of oxygen and reduction of smog and its
+                      effect in large cities creates cleaner, healthier spaces
+                      for us.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 wow slideInUp" data-wow-delay="0.6s">
+                <div class="blog-item bg-light rounded overflow-hidden">
+                  <div class="blog-img position-relative overflow-hidden">
+                    <img class="img-fluid" src="img/planting-1.jpeg" alt="" />
+                  </div>
+                  <div class="p-4">
+                    <div class="d-flex mb-3">
+                      <small class="me-3"
+                        ><i class="far fa-user text-primary me-2"></i
+                        >Team</small
+                      >
+                      <small
+                        ><i class="far fa-calendar-alt text-primary me-2"></i>01
+                        Jan, 2022</small
+                      >
+                    </div>
+                    <h4 class="mb-3">Planting Trees</h4>
+                    <p>
+                      Living close to trees improves our mental health, recent
+                      studies show. Being close to nature positively impacts our
+                      cognitive and psychological health, as well as reduces
+                      stress and Looking for more energy in your life?
+                      Experience natural energy boosts from Vitamin B Complex.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 wow slideInUp" data-wow-delay="0.1s">
+                <div class="blog-item bg-light rounded overflow-hidden">
+                  <div class="blog-img position-relative overflow-hidden">
+                    <img class="img-fluid" src="img/feature - 2.jpeg" alt="" />
+                  </div>
+                  <div class="p-4">
+                    <div class="d-flex mb-3">
+                      <small class="me-3"
+                        ><i class="far fa-user text-primary me-2"></i>Theatre
+                      </small>
+                      <small
+                        ><i class="far fa-calendar-alt text-primary me-2"></i>01
+                        Jan, 2022</small
+                      >
+                    </div>
+                    <h4 class="mb-3">Theatre</h4>
+                    <p>
+                      Acting onstage teaches you how to be comfortable speaking
+                      in front of large audiences, and some of your theatre
+                      classes will give you additional experience talking to
+                      groups.Oral communication skills are so important to some
+                      employers that they often send management trainees to
+                      special workshops.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 wow slideInUp" data-wow-delay="0.6s">
+                <div class="blog-item bg-light rounded overflow-hidden">
+                  <div class="blog-img position-relative overflow-hidden">
+                    <img class="img-fluid" src="img/Activity.jpeg" alt="" />
+                  </div>
+                  <div class="p-4">
+                    <div class="d-flex mb-3">
+                      <small class="me-3"
+                        ><i class="far fa-user text-primary me-2"></i>Skit
+                        Activity</small
+                      >
+                      <small
+                        ><i class="far fa-calendar-alt text-primary me-2"></i>01
+                        Jan, 2022</small
+                      >
+                    </div>
+                    <h4 class="mb-3">Drama</h4>
+                    <p>
+                      Aspects of performing arts, especially improvisation,
+                      helps young people to understand how to appraise
+                      situations, think outside the box and be more confident
+                      going into unfamiliar situations. Students learn to trust
+                      their ideas and abilities. Confidence gained from learning
+                      performing arts skills applies to school, career, and
+                      life.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 wow slideInUp" data-wow-delay="0.1s">
+                <div class="blog-item bg-light rounded overflow-hidden">
+                  <div class="blog-img position-relative overflow-hidden">
+                    <img
+                      class="img-fluid"
+                      src="img/Skit Activity.jpeg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="p-4">
+                    <div class="d-flex mb-3">
+                      <small class="me-3"
+                        ><i class="far fa-user text-primary me-2"></i>Skit
+                      </small>
+                      <small
+                        ><i class="far fa-calendar-alt text-primary me-2"></i>01
+                        Jan, 2022</small
+                      >
+                    </div>
+                    <h4 class="mb-3">Skit Activity</h4>
+                    <p>
+                      Writing and performing a “skit” fosters team-building
+                      skills. Drama improves self-confidence. Character
+                      acting/performing keeps us physically active and mentally
+                      sharp. Performing in plays improves pronunciation and
+                      enunciation skills.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 wow slideInUp" data-wow-delay="0.6s">
+                <div class="blog-item bg-light rounded overflow-hidden">
+                  <div class="blog-img position-relative overflow-hidden">
+                    <img class="img-fluid" src="img/donors.jpeg" alt="" />
+                  </div>
+                  <div class="p-4">
+                    <div class="d-flex mb-3">
+                      <small class="me-3"
+                        ><i class="far fa-user text-primary me-2"></i>Donors
+                      </small>
+                      <small
+                        ><i class="far fa-calendar-alt text-primary me-2"></i>01
+                        Jan, 2022</small
+                      >
+                    </div>
+                    <h4 class="mb-3">Photo with our Donors</h4>
+                    <p>
+                      Each year, with the help of gracious donors like you, we
+                      are able to significantly expand our reach in the
+                      communities we serve. This year is no different, as we
+                      plan to start our new ___ initiative, which wouldn’t be
+                      possible without your support.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 wow slideInUp" data-wow-delay="0.1s">
+                <div class="blog-item bg-light rounded overflow-hidden">
+                  <div class="blog-img position-relative overflow-hidden">
+                    <img class="img-fluid" src="img/Peace.jpeg" alt="" />
+                  </div>
+                  <div class="p-4">
+                    <div class="d-flex mb-3">
+                      <small class="me-3"
+                        ><i class="far fa-user text-primary me-2"></i>Peace
+                      </small>
+                      <small
+                        ><i class="far fa-calendar-alt text-primary me-2"></i>01
+                        Jan, 2022</small
+                      >
+                    </div>
+                    <h4 class="mb-3">peace sensitization in Huruma</h4>
+                    <p>
+                      It aims to resolve injustice in nonviolent ways and to
+                      transform the structural conditions that generate deadly
+                      conflict. Peacebuilding can include conflict prevention;
+                      conflict management; conflict resolution and
+                      transformation, and post-conflict reconciliation.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 wow slideInUp" data-wow-delay="0.6s">
+                <div class="blog-item bg-light rounded overflow-hidden">
+                  <div class="blog-img position-relative overflow-hidden">
+                    <img
+                      class="img-fluid"
+                      src="img/Peace Outreach.jpeg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="p-4">
+                    <div class="d-flex mb-3">
+                      <small class="me-3"
+                        ><i class="far fa-user text-primary me-2"></i>Peace
+                      </small>
+                      <small
+                        ><i class="far fa-calendar-alt text-primary me-2"></i>01
+                        Jan, 2045</small
+                      >
+                    </div>
+                    <h4 class="mb-3">Peace Outreach</h4>
+                    <p>
+                      Peace enriches our communities and individual lives, as it
+                      directs us to embrace diversity and support one another to
+                      the fullest extent possible. Through caring, generosity,
+                      and fairness we provide a cornerstone for attaining a
+                      sustainable, just, meaningful, vibrant, and fulfilling
+                      personal and community life.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 wow slideInUp" data-wow-delay="0.1s">
+                <div class="blog-item bg-light rounded overflow-hidden">
+                  <div class="blog-img position-relative overflow-hidden">
+                    <img class="img-fluid" src="img/climate.jpg" alt="" />
+                  </div>
+                  <div class="p-4">
+                    <div class="d-flex mb-3">
+                      <small class="me-3"
+                        ><i class="far fa-user text-primary me-2"></i>Climate
+                      </small>
+                      <small
+                        ><i class="far fa-calendar-alt text-primary me-2"></i>01
+                        Jan, 2022</small
+                      >
+                    </div>
+                    <h4 class="mb-3">Norta Climate Action</h4>
+                    <p>
+                      Trees are the ultimate carbon storage machines. Like all
+                      plants, they take carbon dioxide from the atmosphere for
+                      their own growth and energy, a process called
+                      photosynthesis. They produce oxygen which we breathe as a
+                      byproduct of this process.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 wow slideInUp" data-wow-delay="0.6s">
+                <div class="blog-item bg-light rounded overflow-hidden">
+                  <div class="blog-img position-relative overflow-hidden">
+                    <img class="img-fluid" src="img/justice.jpeg" alt="" />
+                  </div>
+                  <div class="p-4">
+                    <div class="d-flex mb-3">
+                      <small class="me-3"
+                        ><i class="far fa-user text-primary me-2"></i>Peace
+                      </small>
+                      <small
+                        ><i class="far fa-calendar-alt text-primary me-2"></i>09
+                        Aug, 2022</small
+                      >
+                    </div>
+                    <h4 class="mb-3">Alternative Justice Procession</h4>
+                    <p>
+                      When the election is conducted peacefully everybody is at
+                      peace.Peacefull election also contribute to the
+                      development of a country interms of economy.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Blog list End -->
+
+          <!-- Sidebar Start -->
+          <div class="col-lg-4">
+            <!-- Category Start -->
+            <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">
+              <div
+                class="section-title section-title-sm position-relative pb-3 mb-4"
+              >
+                <h3 class="mb-0">Categories</h3>
+              </div>
+              <div
+                class="link-animated d-flex flex-column justify-content-start"
+              >
+                <a
+                  class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2"
+                  href="#"
+                  ><i class="bi bi-arrow-right me-2"></i>Planting Trees</a
+                >
+                <a
+                  class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2"
+                  href="#"
+                  ><i class="bi bi-arrow-right me-2"></i>Theatre</a
+                >
+                <a
+                  class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2"
+                  href="#"
+                  ><i class="bi bi-arrow-right me-2"></i>Skit Activity</a
+                >
+                <a
+                  class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2"
+                  href="#"
+                  ><i class="bi bi-arrow-right me-2"></i>Donors</a
+                >
+                <a
+                  class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2"
+                  href="#"
+                  ><i class="bi bi-arrow-right me-2"></i>Peace Outreach</a
+                >
+              </div>
+            </div>
+            <!-- Category End -->
+
+            <!-- Recent Post Start -->
+            <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">
+              <div
+                class="section-title section-title-sm position-relative pb-3 mb-4"
+              >
+                <h3 class="mb-0">Recent Post</h3>
+              </div>
+              <div class="d-flex rounded overflow-hidden mb-3">
+                <img
+                  class="img-fluid"
+                  src="img/about.jpg"
+                  style="width: 100px; height: 100px; object-fit: cover"
+                  alt=""
+                />
+                <a
+                  href=""
+                  class="h5 fw-semi-bold d-flex align-items-center bg-light px-3 mb-0"
+                  >Planting trees
+                </a>
+              </div>
+              <div class="d-flex rounded overflow-hidden mb-3">
+                <img
+                  class="img-fluid"
+                  src="img/Skit Activity.jpeg"
+                  style="width: 100px; height: 100px; object-fit: cover"
+                  alt=""
+                />
+                <a
+                  href=""
+                  class="h5 fw-semi-bold d-flex align-items-center bg-light px-3 mb-0"
+                  >Skit Activity
+                </a>
+              </div>
+              <div class="d-flex rounded overflow-hidden mb-3">
+                <img
+                  class="img-fluid"
+                  src="img/Peace.jpeg"
+                  style="width: 100px; height: 100px; object-fit: cover"
+                  alt=""
+                />
+                <a
+                  href=""
+                  class="h5 fw-semi-bold d-flex align-items-center bg-light px-3 mb-0"
+                  >peace sensitization in Huruma
+                </a>
+              </div>
+              <div class="d-flex rounded overflow-hidden mb-3">
+                <img
+                  class="img-fluid"
+                  src="img/justice.jpeg"
+                  style="width: 100px; height: 100px; object-fit: cover"
+                  alt=""
+                />
+                <a
+                  href=""
+                  class="h5 fw-semi-bold d-flex align-items-center bg-light px-3 mb-0"
+                  >Alternative Justice Procession
+                </a>
+              </div>
+              <div class="d-flex rounded overflow-hidden mb-3">
+                <img
+                  class="img-fluid"
+                  src="img/about.jpg"
+                  style="width: 100px; height: 100px; object-fit: cover"
+                  alt=""
+                />
+                <a
+                  href=""
+                  class="h5 fw-semi-bold d-flex align-items-center bg-light px-3 mb-0"
+                  >Norta Climate Action
+                </a>
+              </div>
+              <div class="d-flex rounded overflow-hidden mb-3">
+                <img
+                  class="img-fluid"
+                  src="img/planting-1.jpeg"
+                  style="width: 100px; height: 100px; object-fit: cover"
+                  alt=""
+                />
+                <a
+                  href=""
+                  class="h5 fw-semi-bold d-flex align-items-center bg-light px-3 mb-0"
+                  >Team planting Trees
+                </a>
+              </div>
+            </div>
+            <!-- Recent Post End -->
+
+            <!-- Image Start -->
+            <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">
+              <img src="img/about.jpg" alt="" class="img-fluid rounded" />
+            </div>
+            <!-- Image End -->
+
+            <!-- Tags Start -->
+            <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">
+              <div
+                class="section-title section-title-sm position-relative pb-3 mb-4"
+              >
+                <h3 class="mb-0">Activities</h3>
+              </div>
+              <div class="d-flex flex-wrap m-n1">
+                <a href="" class="btn btn-light m-1">Governance</a>
+                <a href="" class="btn btn-light m-1">Lobbying</a>
+                <a href="" class="btn btn-light m-1">Environment</a>
+                <a href="" class="btn btn-light m-1">Community dialogue</a>
+                <a href="" class="btn btn-light m-1">Peace</a>
+                <a href="" class="btn btn-light m-1">Theatre</a>
+                <a href="" class="btn btn-light m-1">Modelling</a>
+                <a href="" class="btn btn-light m-1">Advocacy</a>
+              </div>
+            </div>
+            <!-- Tags End -->
+
+            <!-- Plain Text Start -->
+            <div class="wow slideInUp" data-wow-delay="0.1s">
+              <div
+                class="section-title section-title-sm position-relative pb-3 mb-4"
+              >
+                <h3 class="mb-0">Plain Text</h3>
+              </div>
+              <div class="bg-light text-center" style="padding: 30px">
+                <p>
+                  Join To promote credible leadership, democracy, peace and good
+                  governance in the north rift region and Kenya at large through
+                  theatre
+                </p>
+              </div>
+            </div>
+            <!-- Plain Text End -->
+          </div>
+          <!-- Sidebar End -->
+        </div>
+      </div>
+    </div>
+    <!-- Blog End -->
+
+    <!-- Footer Start -->
+    <div
+      class="container-fluid bg-dark text-light mt-5 wow fadeInUp"
+      data-wow-delay="0.1s"
+    >
+      <div class="container">
+        <div class="row gx-5">
+          <div class="col-lg-4 col-md-6 footer-about">
+            <div
+              class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4"
+            >
+              <a href="index.html" class="logo d-flex align-items-center">
+                <img src="./img/NORTA_LOGO-removebg.png" class="logo" />
+              </a>
+              <p class="mt-3 mb-4">
+                To be a role model in promoting peace, democracy and leadership.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-6">
+            <div class="row gx-5">
+              <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                <div
+                  class="section-title section-title-sm position-relative pb-3 mb-4"
+                >
+                  <h3 class="text-light mb-0">Get In Touch</h3>
+                </div>
+                <div class="d-flex mb-2">
+                  <i class="bi bi-geo-alt text-primary me-2"></i>
+                  <p class="mb-0">Eldoret</p>
+                </div>
+                <div class="d-flex mb-2">
+                  <i class="bi bi-envelope-open text-primary me-2"></i>
+                  <p class="mb-0">info@norta.or.ke</p>
+                </div>
+                <div class="d-flex mb-2">
+                  <i class="bi bi-telephone text-primary me-2"></i>
+                  <p class="mb-0">0717154825</p>
+                </div>
+                <div class="d-flex mt-4">
+                  <a
+                    class="btn btn-primary btn-square me-2"
+                    href="https://twitter.com/NortAmbassadors?s=20"
+                    ><i class="fab fa-twitter fw-normal"></i
+                  ></a>
+                  <a
+                    class="btn btn-primary btn-square me-2"
+                    href="https://www.facebook.com/85NORTA/
+                    
+                    
+                    "
+                    ><i class="fab fa-facebook-f fw-normal"></i
+                  ></a>
+                  <a class="btn btn-primary btn-square me-2" href="#"
+                    ><i class="fab fa-linkedin-in fw-normal"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                <div
+                  class="section-title section-title-sm position-relative pb-3 mb-4"
+                >
+                  <h3 class="text-light mb-0">Quick Links</h3>
+                </div>
+                <div
+                  class="link-animated d-flex flex-column justify-content-start"
+                >
+                  <a class="text-light mb-2" href="index.html"
+                    ><i class="bi bi-arrow-right text-primary me-2"></i>Home</a
+                  >
+                  <a class="text-light mb-2" href="about.html"
+                    ><i class="bi bi-arrow-right text-primary me-2"></i>About
+                  </a>
+                  <a class="text-light mb-2" href="activities.html"
+                    ><i class="bi bi-arrow-right text-primary me-2"></i
+                    >Activities
+                  </a>
+
+                  <a class="text-light mb-2" href="gallery.html"
+                    ><i class="bi bi-arrow-right text-primary me-2"></i>Gallery
+                  </a>
+                  <a class="text-light" href="contact.html"
+                    ><i class="bi bi-arrow-right text-primary me-2"></i>Contact
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                <div
+                  class="section-title section-title-sm position-relative pb-3 mb-4"
+                >
+                  <h3 class="text-light mb-0">Popular Links</h3>
+                </div>
+                <div
+                  class="link-animated d-flex flex-column justify-content-start"
+                >
+                  <a class="text-light mb-2" href="index.html"
+                    ><i class="bi bi-arrow-right text-primary me-2"></i>Home</a
+                  >
+                  <a class="text-light mb-2" href="about.html"
+                    ><i class="bi bi-arrow-right text-primary me-2"></i>About
+                    Us</a
+                  >
+                  <a class="text-light mb-2" href="activities.html"
+                    ><i class="bi bi-arrow-right text-primary me-2"></i
+                    >Activities
+                  </a>
+
+                  <a class="text-light mb-2" href="galery.html"
+                    ><i class="bi bi-arrow-right text-primary me-2"></i>Gallery
+                  </a>
+                  <a class="text-light" href="contact.html"
+                    ><i class="bi bi-arrow-right text-primary me-2"></i>Contact
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid text-white" style="background: rgb(16, 23, 89)">
+      <div class="container text-center">
+        <div class="row justify-content-end">
+          <div class="col-lg-8 col-md-6">
+            <div
+              class="d-flex align-items-center justify-content-center"
+              style="height: 75px"
+            >
+              <p class="mb-0">
+                &copy;
+                <a class="text-white border-bottom" href="#">Norta</a>. All
+                Rights Reserved.
+
+                <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                Designed by
+                <a class="text-white border-bottom" href="https://htmlcodex.com"
+                  >EldoHub</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
