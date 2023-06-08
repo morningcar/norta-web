@@ -232,11 +232,13 @@
         </div>
         <div class="row g-5">
           <div class="col-lg-6 wow slideInUp" data-wow-delay="0.3s">
-            <form>
+            <form id="myForm">
               <div class="row g-3">
                 <div class="col-md-6">
                   <input
                     type="text"
+                    name="name"
+                    id="name"
                     class="form-control border-0 bg-light px-4"
                     placeholder="Your Name"
                     style="height: 55px"
@@ -245,6 +247,8 @@
                 <div class="col-md-6">
                   <input
                     type="email"
+                    name="email"
+                    id="email"
                     class="form-control border-0 bg-light px-4"
                     placeholder="Your Email"
                     style="height: 55px"
@@ -253,6 +257,8 @@
                 <div class="col-12">
                   <input
                     type="text"
+                    name="subject"
+                    id="subject"
                     class="form-control border-0 bg-light px-4"
                     placeholder="Subject"
                     style="height: 55px"
@@ -262,6 +268,8 @@
                   <textarea
                     class="form-control border-0 bg-light px-4 py-3"
                     rows="4"
+                    name="message"
+                    id="message"
                     placeholder="Message"
                   ></textarea>
                 </div>
@@ -269,6 +277,14 @@
                   <button class="btn btn-primary w-100 py-3" type="submit">
                     Send Message
                   </button>
+                  <div
+                    class="alert alert-success mt-2"
+                    id="alert-success"
+                    role="alert"
+                    style="display: none"
+                  >
+                    Message Received Thank you!!
+                  </div>
                 </div>
               </div>
             </form>
@@ -447,5 +463,45 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <!-- contact form javascript -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("z1nS1F3nOcEReBxgq");
+      })();
+    </script>
+
+    <script>
+      // listen to the form submission
+      document
+        .getElementById("myForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const serviceID = "service_82nifij";
+          const templateID = "template_m52hvev";
+
+          // send the email here
+          emailjs.sendForm(serviceID, templateID, this).then(
+            (response) => {
+              console.log("SUCCESS!", response.status, response.text);
+              event.target.reset();
+              document.getElementById("alert-success").style.display = "block";
+              setTimeout(function () {
+                document.getElementById("alert-success").style.display = "none";
+              }, 5000);
+            },
+            (error) => {
+              console.log("FAILED...", error);
+              alert("FAILED...", error);
+            }
+          );
+        });
+    </script>
   </body>
 </html>
